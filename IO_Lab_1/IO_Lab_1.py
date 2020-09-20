@@ -4,6 +4,7 @@ import module3
 import module4
 import module5
 import module6
+import module7
 
 while True:
     print("""1) Числа и записи выражений
@@ -26,5 +27,7 @@ while True:
         module5.Calculate()
     elif c == 6:
         module6.Write()
+    elif c == 7:
+        module7.Solve()
     else: print("Ошибка")
     print('\n')

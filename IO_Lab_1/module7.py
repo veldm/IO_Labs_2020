@@ -3,18 +3,18 @@ import math
 
 def Solve():
     try:
-        a = float(input("a = "))
-        b = float(input("b = "))
-        c = float(input("c = "))
+        a = int(input("a = "))
+        b = int(input("b = "))
+        c = int(input("c = "))
     except Error as E:
         print("Некорерктный ввод")
 
     res =""
     res += (str(a) + "x^2")
-    if b > 0: res += ("+" + str(b) + "x")
-    elif b < 0: res += (str(b) + "x")
-    if not c == 0: res += str(c)
-    res += "=0"
+    if b > 0: res += (" + " + str(b) + "x")
+    elif b < 0: res += (" - " + str((int)(math.fabs(b))) + "x")
+    if not c == 0: res += (" + " + str(c))
+    res += " = 0"
     print("На вход получено уравнение ", res)
     if (a == 0 and b == 0 and c == 0):
         pass
