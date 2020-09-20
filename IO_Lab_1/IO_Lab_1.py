@@ -3,6 +3,7 @@ import module2
 import module3
 import module4
 import module5
+import module6
 
 while True:
     print("""1) Числа и записи выражений
@@ -10,7 +11,7 @@ while True:
 3) Операции со списками
 4) Задача о Чебурашке
 5) Калькулятор
-6)
+6) Робот пишет по-русски
 7)""")
     c = int(input("\nВведите номер задания: "))
     if c == 1:
@@ -23,5 +24,7 @@ while True:
         module4.Walk()
     elif c == 5:
         module5.Calculate()
+    elif c == 6:
+        module6.Write()
     else: print("Ошибка")
     print('\n')
